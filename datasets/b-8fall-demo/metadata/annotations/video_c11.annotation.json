@@ -1,0 +1,81 @@
+{
+  "dataset": "B-8Fall-Demo",
+  "annotation_type": "manual",
+  "video": {
+    "path": "video_c11.mp4",
+    "stem": "video_c11",
+    "width": 2560,
+    "height": 800,
+    "fps": 30.0,
+    "frame_count": 216,
+    "duration_sec": 7.2
+  },
+  "layout": {
+    "rows": 2,
+    "cols": 4,
+    "tile_width": 640,
+    "tile_height": 400,
+    "view_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 54,
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.833,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 55,
+      "end_frame": 92,
+      "start_time_sec": 1.833,
+      "end_time_sec": 3.1,
+      "state": "normal"
+    },
+    {
+      "start_frame": 93,
+      "end_frame": 138,
+      "start_time_sec": 3.1,
+      "end_time_sec": 4.633,
+      "state": "falling"
+    },
+    {
+      "start_frame": 139,
+      "end_frame": 149,
+      "start_time_sec": 4.633,
+      "end_time_sec": 5.0,
+      "state": "post_fall"
+    },
+    {
+      "start_frame": 150,
+      "end_frame": 215,
+      "start_time_sec": 5.0,
+      "end_time_sec": 7.2,
+      "state": "ignore"
+    }
+  ],
+  "key_events": {
+    "falling_start": {
+      "frame": 93,
+      "time_sec": 3.1
+    },
+    "post_fall_start": {
+      "frame": 139,
+      "time_sec": 4.633
+    }
+  },
+  "metadata": {
+    "tool": "B_8Fall_Demo.annotator",
+    "created_at": "2026-05-01T18:24:19+00:00",
+    "updated_at": "2026-05-01T18:24:19+00:00"
+  }
+}

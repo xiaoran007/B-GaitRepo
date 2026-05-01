@@ -1,0 +1,86 @@
+{
+  "dataset": "B-8Fall-Demo",
+  "annotation_type": "manual",
+  "video": {
+    "path": "video_c14.mp4",
+    "stem": "video_c14",
+    "width": 2560,
+    "height": 800,
+    "fps": 30.0,
+    "frame_count": 530,
+    "duration_sec": 17.667
+  },
+  "layout": {
+    "rows": 2,
+    "cols": 4,
+    "tile_width": 640,
+    "tile_height": 400,
+    "view_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 41,
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.4,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 42,
+      "end_frame": 100,
+      "start_time_sec": 1.4,
+      "end_time_sec": 3.367,
+      "state": "normal"
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 204,
+      "start_time_sec": 3.367,
+      "end_time_sec": 6.833,
+      "state": "transition_nonfall"
+    },
+    {
+      "start_frame": 205,
+      "end_frame": 213,
+      "start_time_sec": 6.833,
+      "end_time_sec": 7.133,
+      "state": "normal"
+    },
+    {
+      "start_frame": 214,
+      "end_frame": 350,
+      "start_time_sec": 7.133,
+      "end_time_sec": 11.7,
+      "state": "transition_nonfall"
+    },
+    {
+      "start_frame": 351,
+      "end_frame": 439,
+      "start_time_sec": 11.7,
+      "end_time_sec": 14.667,
+      "state": "normal"
+    },
+    {
+      "start_frame": 440,
+      "end_frame": 529,
+      "start_time_sec": 14.667,
+      "end_time_sec": 17.667,
+      "state": "ignore"
+    }
+  ],
+  "key_events": {},
+  "metadata": {
+    "tool": "B_8Fall_Demo.annotator",
+    "created_at": "2026-05-01T18:29:06+00:00",
+    "updated_at": "2026-05-01T18:29:06+00:00"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "dataset": "B-8Fall-Demo",
+  "annotation_type": "manual",
+  "video": {
+    "path": "video_c24.mp4",
+    "stem": "video_c24",
+    "width": 2560,
+    "height": 800,
+    "fps": 30.0,
+    "frame_count": 529,
+    "duration_sec": 17.633
+  },
+  "layout": {
+    "rows": 2,
+    "cols": 4,
+    "tile_width": 640,
+    "tile_height": 400,
+    "view_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 83,
+      "start_time_sec": 0.0,
+      "end_time_sec": 2.8,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 224,
+      "start_time_sec": 2.8,
+      "end_time_sec": 7.5,
+      "state": "normal"
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 284,
+      "start_time_sec": 7.5,
+      "end_time_sec": 9.5,
+      "state": "falling"
+    },
+    {
+      "start_frame": 285,
+      "end_frame": 342,
+      "start_time_sec": 9.5,
+      "end_time_sec": 11.433,
+      "state": "post_fall"
+    },
+    {
+      "start_frame": 343,
+      "end_frame": 407,
+      "start_time_sec": 11.433,
+      "end_time_sec": 13.6,
+      "state": "recovery"
+    },
+    {
+      "start_frame": 408,
+      "end_frame": 429,
+      "start_time_sec": 13.6,
+      "end_time_sec": 14.333,
+      "state": "normal"
+    },
+    {
+      "start_frame": 430,
+      "end_frame": 528,
+      "start_time_sec": 14.333,
+      "end_time_sec": 17.633,
+      "state": "ignore"
+    }
+  ],
+  "key_events": {
+    "falling_start": {
+      "frame": 225,
+      "time_sec": 7.5
+    },
+    "post_fall_start": {
+      "frame": 285,
+      "time_sec": 9.5
+    },
+    "recovery_start": {
+      "frame": 343,
+      "time_sec": 11.433
+    }
+  },
+  "metadata": {
+    "tool": "B_8Fall_Demo.annotator",
+    "created_at": "2026-05-01T18:43:36+00:00",
+    "updated_at": "2026-05-01T18:43:36+00:00"
+  }
+}

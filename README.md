@@ -23,10 +23,12 @@ B-GaitRepo/
 └── templates/                       # Reusable metadata and documentation templates
 ```
 
-## Current Migration Targets
+## Current Migration Status
 
-1. `B_8Fall_Demo` video web annotation tool.
-2. `B_8Fall_Demo` dataset annotation metadata products.
+1. `B_8Fall_Demo` video web annotation tool: migrated to
+   `tools/video-web-annotator/`.
+2. `B_8Fall_Demo` dataset annotation metadata products: copied to
+   `datasets/b-8fall-demo/metadata/annotations/`.
 3. [B-MCFD](https://github.com/xiaoran007/B-MCFD).
 4. [Kinetics-i3d-for-modern-pytorch](https://github.com/xiaoran007/Kinetics-i3d-for-modern-pytorch).
 5. [multi_cam_jetson PR #2](https://github.com/C-H-Chien/multi_cam_jetson/pull/2).
