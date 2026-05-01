@@ -1,27 +1,55 @@
 # Video Web Annotator
 
-Migration target: `/Users/xiaoran/Desktop/code/B-Gait/B_8Fall_Demo`.
+Migrated from: `/Users/xiaoran/Desktop/code/B-Gait/B_8Fall_Demo`.
 
-This folder is reserved for the video web annotation tool used by
-`B_8Fall_Demo`. The goal is to keep the annotator as a reusable lab utility
-while separating it from dataset-specific raw media.
+This folder contains the reusable local web annotator used by `B_8Fall_Demo`.
+The original Python package name, `B_8Fall_Demo`, is preserved so the copied
+tool can keep its relative imports and legacy absolute package imports.
 
-## Planned Contents
+## Layout
 
 ```text
 tools/video-web-annotator/
 ├── README.md
-├── app/ or src/          # Web app source after migration
-├── config/               # Example annotation/task configs
-├── examples/             # Tiny demo inputs, no large videos
-└── docs/                 # UI workflow and export format notes
+└── B_8Fall_Demo/
+    ├── annotator.py
+    ├── render_annotation_preview.py
+    └── static/
 ```
 
-## Migration Notes
+## Run
 
-- Keep reusable annotation UI logic here.
-- Keep B_8Fall_Demo-specific exported metadata under
-  `datasets/b-8fall-demo/metadata/`.
-- Do not commit large videos or frame dumps.
-- Document any required browser, Node, Python, or backend runtime before adding
-  setup commands.
+Runtime dependencies are listed in `requirements.txt`.
+
+Run commands from this directory so `python -m B_8Fall_Demo...` resolves the
+copied package:
+
+```bash
+cd tools/video-web-annotator
+python -m B_8Fall_Demo.annotator \
+  --video <stitched-video.mp4> \
+  --output-dir ../../datasets/b-8fall-demo/metadata/annotations
+```
+
+For a directory of stitched videos:
+
+```bash
+cd tools/video-web-annotator
+python -m B_8Fall_Demo.annotator \
+  --video-dir <stitched-video-directory> \
+  --output-dir ../../datasets/b-8fall-demo/metadata/annotations
+```
+
+The copied tool still expects stitched `2 x 4` videos by default. Use
+`--rows` and `--cols` if the mosaic layout changes.
+
+## Metadata Location
+
+Committed annotation metadata lives in:
+
+```text
+datasets/b-8fall-demo/metadata/annotations/
+```
+
+Large raw videos, extracted frames, rendered preview videos, and other generated
+media should stay outside this repository.

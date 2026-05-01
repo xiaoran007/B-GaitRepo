@@ -203,6 +203,10 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Generated annotation preview videos
+*.preview.mp4
+*.annotation.preview.mp4
+
 # Ruff stuff:
 .ruff_cache/
 
