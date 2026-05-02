@@ -47,6 +47,7 @@ The dataset contains 25 videos:
 ├── video_c24.mp4
 └── video_c25.mp4
 ```
+Please note that `video_c25.mp4` is renamed from `video_11.mp4`.
 
 ### Annotation labels (states):
 
