@@ -49,6 +49,18 @@ The dataset contains 25 videos:
 ```
 
 Annotation metadata contains `json` files like this:
+
+Annotation states:
+
+| State | Meaning |
+| --- | --- |
+| `ignore` | Frames not used for labeling or evaluation, such as trimming margins or invalid video ranges. |
+| `normal` | Normal non-fall behavior. |
+| `transition_nonfall` | Non-fall transition movement, such as posture changes that should not be counted as falling. |
+| `falling` | The active falling interval. |
+| `post_fall` | After the fall impact, before recovery starts. |
+| `recovery` | Recovery or getting-up movement after a fall. |
+
 ```json
 {
   "dataset": "B-8Fall-Demo",
@@ -127,4 +139,3 @@ python -m B_8Fall_Demo.annotator \
 
 ## Contributors
 T. Fang
-
