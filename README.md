@@ -48,18 +48,20 @@ The dataset contains 25 videos:
 └── video_c25.mp4
 ```
 
-Annotation metadata contains `json` files like this:
-
-Annotation states:
+### Annotation labels (states):
 
 | State | Meaning |
 | --- | --- |
-| `ignore` | Frames not used for labeling or evaluation, such as trimming margins or invalid video ranges. |
+| `ignore` | Frames not used, such as setup / initial state. |
 | `normal` | Normal non-fall behavior. |
 | `transition_nonfall` | Non-fall transition movement, such as posture changes that should not be counted as falling. |
 | `falling` | The active falling interval. |
 | `post_fall` | After the fall impact, before recovery starts. |
 | `recovery` | Recovery or getting-up movement after a fall. |
+
+
+Annotation metadata contains `json` files like this:
+
 
 ```json
 {
