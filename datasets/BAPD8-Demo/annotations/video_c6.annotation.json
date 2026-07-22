@@ -1,0 +1,59 @@
+{
+  "dataset": "BAPD8-Demo",
+  "annotation_type": "manual",
+  "subject": 3,
+  "video": {
+    "path": "video_c6.mp4",
+    "stem": "video_c6",
+    "width": 2560,
+    "height": 800,
+    "fps": 30.0,
+    "frame_count": 854,
+    "duration_sec": 28.467
+  },
+  "layout": {
+    "rows": 2,
+    "cols": 4,
+    "tile_width": 640,
+    "tile_height": 400,
+    "view_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 43,
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.467,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 44,
+      "end_frame": 822,
+      "start_time_sec": 1.467,
+      "end_time_sec": 27.433,
+      "state": "normal"
+    },
+    {
+      "start_frame": 823,
+      "end_frame": 853,
+      "start_time_sec": 27.433,
+      "end_time_sec": 28.467,
+      "state": "ignore"
+    }
+  ],
+  "key_events": {},
+  "metadata": {
+    "tool": "BAPD8_Demo.annotator",
+    "created_at": "2026-05-01T18:17:43+00:00",
+    "updated_at": "2026-05-01T18:17:43+00:00"
+  }
+}

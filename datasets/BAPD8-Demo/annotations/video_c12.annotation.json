@@ -1,0 +1,87 @@
+{
+  "dataset": "BAPD8-Demo",
+  "annotation_type": "manual",
+  "subject": 2,
+  "video": {
+    "path": "video_c12.mp4",
+    "stem": "video_c12",
+    "width": 2560,
+    "height": 800,
+    "fps": 30.0,
+    "frame_count": 549,
+    "duration_sec": 18.3
+  },
+  "layout": {
+    "rows": 2,
+    "cols": 4,
+    "tile_width": 640,
+    "tile_height": 400,
+    "view_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 69,
+      "start_time_sec": 0.0,
+      "end_time_sec": 2.333,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 98,
+      "start_time_sec": 2.333,
+      "end_time_sec": 3.3,
+      "state": "normal"
+    },
+    {
+      "start_frame": 99,
+      "end_frame": 143,
+      "start_time_sec": 3.3,
+      "end_time_sec": 4.8,
+      "state": "transition_nonfall"
+    },
+    {
+      "start_frame": 144,
+      "end_frame": 203,
+      "start_time_sec": 4.8,
+      "end_time_sec": 6.8,
+      "state": "normal"
+    },
+    {
+      "start_frame": 204,
+      "end_frame": 322,
+      "start_time_sec": 6.8,
+      "end_time_sec": 10.767,
+      "state": "transition_nonfall"
+    },
+    {
+      "start_frame": 323,
+      "end_frame": 368,
+      "start_time_sec": 10.767,
+      "end_time_sec": 12.3,
+      "state": "normal"
+    },
+    {
+      "start_frame": 369,
+      "end_frame": 548,
+      "start_time_sec": 12.3,
+      "end_time_sec": 18.3,
+      "state": "ignore"
+    }
+  ],
+  "key_events": {},
+  "metadata": {
+    "tool": "BAPD8_Demo.annotator",
+    "created_at": "2026-05-01T18:25:55+00:00",
+    "updated_at": "2026-05-01T18:25:55+00:00"
+  }
+}

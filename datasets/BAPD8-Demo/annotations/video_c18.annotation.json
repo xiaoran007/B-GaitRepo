@@ -1,0 +1,107 @@
+{
+  "dataset": "BAPD8-Demo",
+  "annotation_type": "manual",
+  "subject": 2,
+  "video": {
+    "path": "video_c18.mp4",
+    "stem": "video_c18",
+    "width": 2560,
+    "height": 800,
+    "fps": 30.0,
+    "frame_count": 875,
+    "duration_sec": 29.167
+  },
+  "layout": {
+    "rows": 2,
+    "cols": 4,
+    "tile_width": 640,
+    "tile_height": 400,
+    "view_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "timeline": [
+    {
+      "start_frame": 0,
+      "end_frame": 89,
+      "start_time_sec": 0.0,
+      "end_time_sec": 3.0,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 90,
+      "end_frame": 105,
+      "start_time_sec": 3.0,
+      "end_time_sec": 3.533,
+      "state": "normal"
+    },
+    {
+      "start_frame": 106,
+      "end_frame": 143,
+      "start_time_sec": 3.533,
+      "end_time_sec": 4.8,
+      "state": "falling"
+    },
+    {
+      "start_frame": 144,
+      "end_frame": 247,
+      "start_time_sec": 4.8,
+      "end_time_sec": 8.267,
+      "state": "post_fall"
+    },
+    {
+      "start_frame": 248,
+      "end_frame": 344,
+      "start_time_sec": 8.267,
+      "end_time_sec": 11.5,
+      "state": "recovery"
+    },
+    {
+      "start_frame": 345,
+      "end_frame": 475,
+      "start_time_sec": 11.5,
+      "end_time_sec": 15.867,
+      "state": "ignore"
+    },
+    {
+      "start_frame": 476,
+      "end_frame": 732,
+      "start_time_sec": 15.867,
+      "end_time_sec": 24.433,
+      "state": "normal"
+    },
+    {
+      "start_frame": 733,
+      "end_frame": 874,
+      "start_time_sec": 24.433,
+      "end_time_sec": 29.167,
+      "state": "ignore"
+    }
+  ],
+  "key_events": {
+    "falling_start": {
+      "frame": 106,
+      "time_sec": 3.533
+    },
+    "post_fall_start": {
+      "frame": 144,
+      "time_sec": 4.8
+    },
+    "recovery_start": {
+      "frame": 248,
+      "time_sec": 8.267
+    }
+  },
+  "metadata": {
+    "tool": "BAPD8_Demo.annotator",
+    "created_at": "2026-05-01T18:35:31+00:00",
+    "updated_at": "2026-05-01T18:35:31+00:00"
+  }
+}

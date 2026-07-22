@@ -7,16 +7,16 @@ and links that may useful.
 
 ```text
 B-GaitRepo/
-├── annotator/                 # B_8Fall_Demo local video annotation tool
+├── annotator/                 # BAPD8-Demo local video annotation tool
 ├── datasets/
-│   └── B_8Fall_Demo/          # exported annotation JSON files
+│   └── BAPD8-Demo/            # exported annotation JSON files
 └── README.md
 ```
 
-## B-8Fall-Demo
+## BAPD8-Demo
 
 - Web annotator: [`annotator/`](annotator/)
-- Annotation metadata: [`metadata/B_8Fall_Demo/`](metadata/B_8Fall_Demo/)
+- Annotation metadata: [`datasets/BAPD8-Demo/`](datasets/BAPD8-Demo/)
 
 The dataset contains 25 videos:
 ```text
@@ -61,13 +61,15 @@ Please note that `video_c25.mp4` is renamed from `video_11.mp4`.
 | `recovery` | Recovery or getting-up movement after a fall. |
 
 
-Annotation metadata contains `json` files like this:
+Annotation metadata contains `json` files like this. The top-level `subject`
+field identifies the actor consistently across videos, using integer IDs 1-3.
 
 
 ```json
 {
-  "dataset": "B-8Fall-Demo",
+  "dataset": "BAPD8-Demo",
   "annotation_type": "manual",
+  "subject": 1,
   "video": {
     "path": "video_c1.mp4",
     "stem": "video_c1",
@@ -118,7 +120,7 @@ Annotation metadata contains `json` files like this:
   ],
   "key_events": {},
   "metadata": {
-    "tool": "B_8Fall_Demo.annotator",
+    "tool": "BAPD8_Demo.annotator",
     "created_at": "2026-05-01T18:00:02+00:00",
     "updated_at": "2026-05-01T18:00:02+00:00"
   }
@@ -130,9 +132,16 @@ Run the annotator from `annotator/`:
 
 ```bash
 cd annotator
-python -m B_8Fall_Demo.annotator \
+python -m BAPD8_Demo.annotator \
   --video-dir <video-directory> \
   --output-dir <annotations-dir>
+```
+
+After annotation, apply the fixed video-to-subject mapping:
+
+```bash
+python datasets/BAPD8-Demo/patch_subject_metadata.py \
+  --annotation-dir <annotations-dir>
 ```
 
 ## Other Repo
