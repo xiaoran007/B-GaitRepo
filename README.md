@@ -9,14 +9,14 @@ and links that may useful.
 B-GaitRepo/
 ├── annotator/                 # BAPD8-Demo local video annotation tool
 ├── datasets/
-│   └── BAPD8_Demo/            # exported annotation JSON files
+│   └── BAPD8-Demo/            # exported annotation JSON files
 └── README.md
 ```
 
 ## BAPD8-Demo
 
 - Web annotator: [`annotator/`](annotator/)
-- Annotation metadata: [`datasets/BAPD8_Demo/`](datasets/BAPD8_Demo/)
+- Annotation metadata: [`datasets/BAPD8-Demo/`](datasets/BAPD8-Demo/)
 
 The dataset contains 25 videos:
 ```text
