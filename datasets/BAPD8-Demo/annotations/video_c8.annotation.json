@@ -1,6 +1,7 @@
 {
   "dataset": "BAPD8-Demo",
   "annotation_type": "manual",
+  "subject": 1,
   "video": {
     "path": "video_c8.mp4",
     "stem": "video_c8",

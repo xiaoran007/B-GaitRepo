@@ -61,13 +61,15 @@ Please note that `video_c25.mp4` is renamed from `video_11.mp4`.
 | `recovery` | Recovery or getting-up movement after a fall. |
 
 
-Annotation metadata contains `json` files like this:
+Annotation metadata contains `json` files like this. The top-level `subject`
+field identifies the actor consistently across videos, using integer IDs 1-3.
 
 
 ```json
 {
   "dataset": "BAPD8-Demo",
   "annotation_type": "manual",
+  "subject": 1,
   "video": {
     "path": "video_c1.mp4",
     "stem": "video_c1",
@@ -133,6 +135,13 @@ cd annotator
 python -m BAPD8_Demo.annotator \
   --video-dir <video-directory> \
   --output-dir <annotations-dir>
+```
+
+After annotation, apply the fixed video-to-subject mapping:
+
+```bash
+python datasets/BAPD8-Demo/patch_subject_metadata.py \
+  --annotation-dir <annotations-dir>
 ```
 
 ## Other Repo
