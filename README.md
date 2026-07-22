@@ -7,16 +7,16 @@ and links that may useful.
 
 ```text
 B-GaitRepo/
-├── annotator/                 # B_8Fall_Demo local video annotation tool
+├── annotator/                 # BAPD8-Demo local video annotation tool
 ├── datasets/
-│   └── B_8Fall_Demo/          # exported annotation JSON files
+│   └── BAPD8_Demo/            # exported annotation JSON files
 └── README.md
 ```
 
-## B-8Fall-Demo
+## BAPD8-Demo
 
 - Web annotator: [`annotator/`](annotator/)
-- Annotation metadata: [`metadata/B_8Fall_Demo/`](metadata/B_8Fall_Demo/)
+- Annotation metadata: [`datasets/BAPD8_Demo/`](datasets/BAPD8_Demo/)
 
 The dataset contains 25 videos:
 ```text
@@ -66,7 +66,7 @@ Annotation metadata contains `json` files like this:
 
 ```json
 {
-  "dataset": "B-8Fall-Demo",
+  "dataset": "BAPD8-Demo",
   "annotation_type": "manual",
   "video": {
     "path": "video_c1.mp4",
@@ -118,7 +118,7 @@ Annotation metadata contains `json` files like this:
   ],
   "key_events": {},
   "metadata": {
-    "tool": "B_8Fall_Demo.annotator",
+    "tool": "BAPD8_Demo.annotator",
     "created_at": "2026-05-01T18:00:02+00:00",
     "updated_at": "2026-05-01T18:00:02+00:00"
   }
@@ -130,7 +130,7 @@ Run the annotator from `annotator/`:
 
 ```bash
 cd annotator
-python -m B_8Fall_Demo.annotator \
+python -m BAPD8_Demo.annotator \
   --video-dir <video-directory> \
   --output-dir <annotations-dir>
 ```

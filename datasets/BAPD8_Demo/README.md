@@ -1,6 +1,6 @@
-# B_8Fall_Demo Metadata
+# BAPD8-Demo Metadata
 
-This folder stores the exported manual annotations for B_8Fall_Demo.
+This folder stores the exported manual annotations for BAPD8-Demo.
 
 Current contents:
 
