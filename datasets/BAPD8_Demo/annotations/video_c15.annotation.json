@@ -1,5 +1,5 @@
 {
-  "dataset": "B-8Fall-Demo",
+  "dataset": "BAPD8-Demo",
   "annotation_type": "manual",
   "video": {
     "path": "video_c15.mp4",
@@ -67,7 +67,7 @@
     }
   },
   "metadata": {
-    "tool": "B_8Fall_Demo.annotator",
+    "tool": "BAPD8_Demo.annotator",
     "created_at": "2026-05-01T18:30:15+00:00",
     "updated_at": "2026-05-01T18:30:15+00:00"
   }
