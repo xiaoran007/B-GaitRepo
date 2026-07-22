@@ -70,7 +70,7 @@ class AnnotatorContext:
         preview_path = self.annotation_preview_path(video_name)
         tile_width, tile_height = validate_layout(info, self.layout)
         return {
-            "dataset": "B-8Fall-Demo",
+            "dataset": "BAPD8-Demo",
             "video": {
                 "name": self.resolve_video_name(video_name),
                 "path": str(info.path),
@@ -143,7 +143,7 @@ class AnnotatorContext:
 
 def make_handler(context: AnnotatorContext):
     class AnnotatorHandler(BaseHTTPRequestHandler):
-        server_version = "B8FallAnnotator/0.1"
+        server_version = "BAPD8Annotator/0.1"
 
         def do_GET(self) -> None:
             parsed = urlparse(self.path)
@@ -293,7 +293,7 @@ def _natural_sort_key(value: str) -> list[int | str]:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Launch the B-8Fall-Demo local manual annotation UI.")
+    parser = argparse.ArgumentParser(description="Launch the BAPD8-Demo local manual annotation UI.")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--video", help="Path to one stitched/mosaic video.")
     group.add_argument("--video-dir", help="Directory containing stitched/mosaic videos.")
@@ -334,7 +334,7 @@ def main() -> None:
     context.output_dir.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer((args.host, args.port), make_handler(context))
     url = f"http://{args.host}:{args.port}/"
-    print(f"B-8Fall-Demo annotator: {url}")
+    print(f"BAPD8-Demo annotator: {url}")
     print(f"Videos: {len(video_paths)}")
     print(f"Output dir: {context.output_dir}")
     print("Press Ctrl+C to stop.")

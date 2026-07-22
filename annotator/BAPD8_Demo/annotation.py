@@ -11,7 +11,7 @@ from .video import VideoInfo, validate_layout
 
 
 STATES = ("ignore", "normal", "transition_nonfall", "falling", "post_fall", "recovery")
-TOOL_NAME = "B_8Fall_Demo.annotator"
+TOOL_NAME = "BAPD8_Demo.annotator"
 
 
 def load_initial_annotation(

@@ -1,6 +1,6 @@
-# B_8Fall_Demo Video Annotator
+# BAPD8-Demo Video Annotator
 
-Local browser-based annotation tool for stitched `2 x 4` B_8Fall_Demo videos (may also work with other videos).
+Local browser-based annotation tool for stitched `2 x 4` BAPD8-Demo videos (may also work with other videos).
 
 ## Files
 
@@ -8,14 +8,14 @@ Local browser-based annotation tool for stitched `2 x 4` B_8Fall_Demo videos (ma
 annotator/
 ├── README.md
 ├── requirements.txt
-└── B_8Fall_Demo/
+└── BAPD8_Demo/
     ├── annotator.py
     ├── render_annotation_preview.py
     └── static/
 ```
 
-The package name `B_8Fall_Demo` is intentionally preserved so module commands
-work without extra packaging.
+The package name `BAPD8_Demo` uses underscores so module commands work without
+extra packaging.
 
 ## Run
 
@@ -24,7 +24,7 @@ then run from this folder:
 
 ```bash
 cd annotator
-python -m B_8Fall_Demo.annotator \
+python -m BAPD8_Demo.annotator \
   --video <stitched-video.mp4> \
   --output-dir <annotations-dir>
 ```
@@ -33,7 +33,7 @@ For a directory of stitched videos:
 
 ```bash
 cd annotator
-python -m B_8Fall_Demo.annotator \
+python -m BAPD8_Demo.annotator \
   --video-dir <video-directory> \
   --output-dir <annotations-dir>
 ```
@@ -48,7 +48,7 @@ After saving, click `Render Preview` in the UI, or run:
 
 ```bash
 cd annotator
-python -m B_8Fall_Demo.render_annotation_preview \
+python -m BAPD8_Demo.render_annotation_preview \
   --video <stitched-video.mp4> \
   --output-dir <annotations-dir>
 ```

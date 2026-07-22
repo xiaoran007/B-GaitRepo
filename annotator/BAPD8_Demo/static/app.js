@@ -69,7 +69,7 @@ function markDirty(value = true) {
   dirty = value;
   dirtyBadge.textContent = dirty ? "unsaved" : "saved";
   dirtyBadge.classList.toggle("unsaved", dirty);
-  document.title = `${dirty ? "*" : ""}B-8Fall-Demo Annotator`;
+  document.title = `${dirty ? "*" : ""}BAPD8-Demo Annotator`;
 }
 
 function formatFrame(frame) {
